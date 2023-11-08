@@ -5,28 +5,17 @@ export interface Pet {
   level: number;
   xp: number;
   character: 'tapu';
-  plant: Plant;
+  moisturePercentage: number;
+  temperature: number;
+  maxTemperature: number;
+  minTemperature: number;
+  maxMoisturePercentage: number;
+  minMoisturePercentage: number;
+  species: string;
+  battery: number;
 }
 
 export interface User {
   pets: Pet[];
-  plants: Plant[];
-  devices: Device[];
 }
 
-export interface WaterEntry {
-  previousSoilMoisture: number;
-  previousTemperature: number;
-}
-
-export interface Plant {
-  envTemperature: number;
-  id: number;
-  soilMoisture: number;
-  watering: WaterEntry[];
-}
-
-export interface Device {
-  battery: number;
-  pet: Pet;
-}

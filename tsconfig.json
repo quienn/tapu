@@ -19,12 +19,7 @@
       "@/*": [
         "./src/*"
       ]
-    },
-    "plugins": [
-      {
-        "name": "typescript-vue-plugin"
-      }
-    ]
+    }
   },
   "include": [
     "src/**/*.ts",

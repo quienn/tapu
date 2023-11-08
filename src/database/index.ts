@@ -19,7 +19,7 @@ export const authentication = getAuth(app);
 
 if (import.meta.env.DEV) {
   connectFirestoreEmulator(database, '127.0.0.1', 8080);
-  connectAuthEmulator(authentication, 'http://127.0.0.1/9099', {
+  connectAuthEmulator(authentication, 'http://127.0.0.1:9099', {
     disableWarnings: true
   });
   connectFunctionsEmulator(functions, '127.0.0.1', 5001);
